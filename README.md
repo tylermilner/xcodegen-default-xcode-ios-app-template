@@ -1,6 +1,6 @@
 # xcodegen-default-xcode-ios-app-template
 
-A basic iOS app that uses XcodeGen for Xcode project file generation while attempting to mimic to the default Xcode iOS "App" template that you can use when creating a new Xcode project via File --> New --> Project.
+A basic iOS app that uses [XcodeGen](https://github.com/yonaskolb/XcodeGen) for Xcode project file generation while attempting to mimic to the default Xcode iOS "App" template that you can use when creating a new Xcode project via File --> New --> Project.
 
 ![Xcode "File" -> "New" --> "Project" app template selection.](./docs/images/xcode-file-new-project-app-template-1.png)
 
@@ -10,7 +10,7 @@ For this template's primary reference, a default SwiftUI-based project called "M
 
 ## Getting Started
 
-1. Install XcodeGen - `brew install xcodegen`
+1. [Install XcodeGen](https://github.com/yonaskolb/XcodeGen/tree/master?tab=readme-ov-file#installing) - `brew install xcodegen`
 2. Clone and open repo directory - `git clone https://github.com/tylermilner/xcodegen-default-xcode-ios-app-template.git && cd xcodegen-default-xcode-ios-app-template`
 3. Run XcodeGen - `xcodegen`
 4. Open the generated `xcodeproj` file - `open MyApp.xcodeproj`.
