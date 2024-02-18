@@ -31,8 +31,8 @@ However, many of these changes are extremely minor or even just cosmetic differe
 
 **Product Name (`PRODUCT_NAME`)**
 
-* Xcode default - `` (unset/inherited value)
-* XcodeGen default - `` (explicit/overridden value)
+* Xcode default - _nonexistent_ (unset/inherited value)
+* XcodeGen default - _nonexistent_ (explicit/overridden value)
 
 ![Screenshot of comparison of "Packaging" section of Xcode project settings between default Xcode-generated project and XcodeGen-generated project.](./docs/images/xcode-xcodegen-project-settings-comparison-product-name.png)
 
@@ -64,7 +64,7 @@ Although these values differ, there should be no real-world impact, assuming you
 
 **`CLANG_CXX_LIBRARY`**
 
-* Xcode default - `` (nonexistent)
+* Xcode default - _nonexistent_
 * XcodeGen default - `libc++` (explicit/overridden value)
 
 ![Screenshot of a comparison of "User-Defined" section of Xcode project settings between default Xcode-generated project and XcodeGen-generated project.](./docs/images/xcode-xcodegen-project-settings-comparison-user-defined-clang-cxx-library.png)
@@ -141,7 +141,7 @@ This difference should have no real-world impact.
 
 **`CLANG_CXX_LIBRARY`**
 
-* Xcode default - `` (nonexistent)
+* Xcode default - _nonexistent_
 * XcodeGen default - `libc++` (unset/inherited value)
 
 ![Screenshot of a comparison of "User-Defined" section of Xcode project settings between default Xcode-generated project and XcodeGen-generated project.](./docs/images/xcode-xcodegen-target-settings-comparison-user-defined-clang-cxx-library.png)
