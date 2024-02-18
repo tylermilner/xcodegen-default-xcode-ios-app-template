@@ -2,7 +2,7 @@ name: MyApp
 options:
   defaultConfig: "Release"
   deploymentTarget:
-    iOS: "17.2" # TODO: Find some way to detect the current default deployment target from the user's current Xcode version
+    iOS: "17.2"
 settings:
   base:
     ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: "YES"
@@ -19,17 +19,6 @@ targets:
     platform: iOS
     sources:
       - MyApp
-    # TODO: Test example where Info.plist file is generated
-    # Have Xcodegen create an Info.plist file on the filesystem
-    # info:
-    #   path: MyApp/Info.plist
-    #   properties:
-    #     # Match Xcode defaults
-    #     CFBundlePackageType: "$(PRODUCT_BUNDLE_PACKAGE_TYPE)"
-    #     CFBundleShortVersionString: "$(MARKETING_VERSION)"
-    #     CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
-    #     LSRequiresIPhoneOS: "YES"
-    #     UIApplicationSupportsIndirectInputEvents: "YES"
     settings:
       base:
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: "AccentColor"
