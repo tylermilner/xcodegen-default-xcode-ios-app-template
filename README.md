@@ -6,7 +6,17 @@ A basic iOS app that uses [XcodeGen](https://github.com/yonaskolb/XcodeGen) for 
 
 ![Xcode new project setup options.](./docs/images/xcode-file-new-project-app-template-2.png)
 
-For this template's primary reference, a default SwiftUI-based project called "MyApp" was created using Xcode `15.2` and compared to a bare-bones project created using XcodeGen `2.38.0`.
+The primary reference to determine the necessary contents of the `project.yml` was a default SwiftUI-based app called "MyApp" created using Xcode `15.2` and compared to the following bare-bones project created using XcodeGen `2.38.0`:
+
+```yaml
+name: MyApp
+targets:
+  MyApp:
+    type: application
+    platform: iOS
+    sources:
+      - MyApp
+```
 
 ## Getting Started
 
