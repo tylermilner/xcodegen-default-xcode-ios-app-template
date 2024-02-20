@@ -27,8 +27,8 @@ targets:
         DEVELOPMENT_ASSET_PATHS: "\"MyApp/Preview Content\""
         ENABLE_PREVIEWS: "YES"
         GENERATE_INFOPLIST_FILE: "YES" # Lets Xcode automatically manage the Info.plist file as part of the project settings
-        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: "YES"
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: "YES"
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: "YES"
         INFOPLIST_KEY_UILaunchScreen_Generation: "YES"
         INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad:
           - "UIInterfaceOrientationPortrait"
