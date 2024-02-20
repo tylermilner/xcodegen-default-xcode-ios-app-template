@@ -129,6 +129,8 @@ This difference should have no real-world impact.
 
 This difference should have no real-world impact.
 
+By default, XcodeGen sets `CODE_SIGN_IDENTITY` to the older Xcode default of "iOS Developer", which can cause build issues. At some point, [this XcodeGen issue](https://github.com/yonaskolb/XcodeGen/issues/691) might get resolved, in which case we can remove the explicit `CODE_SIGN_IDENTITY` value from the `project.yml` file.
+
 **Code Signing Style (`CODE_SIGN_STYLE`)**
 
 * Xcode default - `Automatic` (explicit/overridden value)
