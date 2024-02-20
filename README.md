@@ -4,10 +4,29 @@ A basic iOS app that uses [XcodeGen](https://github.com/yonaskolb/XcodeGen) for 
 
 ## Getting Started
 
-1. [Install XcodeGen](https://github.com/yonaskolb/XcodeGen/tree/master?tab=readme-ov-file#installing) - `brew install xcodegen`
-2. Clone and open repo directory - `git clone https://github.com/tylermilner/xcodegen-default-xcode-ios-app-template.git && cd xcodegen-default-xcode-ios-app-template`
-3. Run XcodeGen - `xcodegen`
-4. Open the generated `xcodeproj` file - `open MyApp.xcodeproj`.
+1. [Install XcodeGen](https://github.com/yonaskolb/XcodeGen/tree/master?tab=readme-ov-file#installing) using [Homebrew](https://brew.sh):
+
+```shell
+brew install xcodegen
+```
+
+2. Clone and open repo directory:
+
+```shell
+git clone https://github.com/tylermilner/xcodegen-default-xcode-ios-app-template.git && cd xcodegen-default-xcode-ios-app-template
+```
+
+3. Run XcodeGen:
+
+```shell
+xcodegen
+```
+
+4. Open the generated `xcodeproj` file:
+
+```shell
+open MyApp.xcodeproj
+```
 
 If you would like to customize the template generation process, make the necessary changes in `project.yml` and then run `xcodegen` again.
 
@@ -37,7 +56,7 @@ targets:
 
 ![Xcode new project setup options.](./docs/images/xcode-file-new-project-app-template-2.png)
 
-## Discrepancies with Xcode
+## Discrepancies with Xcode-Generated Projects
 
 When generating this project using XcodeGen, the following settings technically stray slightly from what you would encounter when creating a new project via the Xcode UI.
 
