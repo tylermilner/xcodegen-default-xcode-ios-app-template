@@ -15,7 +15,7 @@ However, many of these changes are extremely minor or even just cosmetic differe
 * Xcode default - _nonexistent_ (unset/inherited value)
 * XcodeGen default - _nonexistent_ (explicit/overridden value)
 
-![Screenshot of comparison of "Packaging" section of Xcode project settings between default Xcode-generated project and XcodeGen-generated project.](./docs/images/xcode-xcodegen-project-settings-comparison-product-name.png)
+![Screenshot of comparison of "Packaging" section of Xcode project settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-project-settings-comparison-product-name.png)
 
 This difference should have no real-world impact.
 
@@ -26,7 +26,7 @@ This difference should have no real-world impact.
 * Xcode default - `Optimize for Speed [-O]` (unset/inherited value)
 * XcodeGen default - `Optimize for Speed [-O]` (explicit/overridden value)
 
-![Screenshot of comparison of "Swift Compiler - Code Generation" section of Xcode project settings between default Xcode-generated project and XcodeGen-generated project.](./docs/images/xcode-xcodegen-project-settings-comparison-optimization-level-release.png)
+![Screenshot of comparison of "Swift Compiler - Code Generation" section of Xcode project settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-project-settings-comparison-optimization-level-release.png)
 
 Since the overridden value is the same as the default value, this should not have any meaningful effect on the overall project settings.
 
@@ -37,7 +37,7 @@ Since the overridden value is the same as the default value, this should not hav
 * Xcode default - `Unspecified` (unset/inherited value)
 * XcodeGen default - `Swift 5` (explicit/overridden value)
 
-![Screenshot of a comparison of "Swift Compiler - Language" section of Xcode project settings between default Xcode-generated project and XcodeGen-generated project.](./docs/images/xcode-xcodegen-project-settings-comparison-swift-language-version.png)
+![Screenshot of a comparison of "Swift Compiler - Language" section of Xcode project settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-project-settings-comparison-swift-language-version.png)
 
 Although these values differ, there should be no real-world impact, assuming you want to use Swift 5 by default.
 
@@ -48,7 +48,7 @@ Although these values differ, there should be no real-world impact, assuming you
 * Xcode default - _nonexistent_
 * XcodeGen default - `libc++` (explicit/overridden value)
 
-![Screenshot of a comparison of "User-Defined" section of Xcode project settings between default Xcode-generated project and XcodeGen-generated project.](./docs/images/xcode-xcodegen-project-settings-comparison-user-defined-clang-cxx-library.png)
+![Screenshot of a comparison of "User-Defined" section of Xcode project settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-project-settings-comparison-user-defined-clang-cxx-library.png)
 
 This difference has the _potential_ to impact something if it makes use of the `CLANG_CXX_LIBRARY` variable during the build process, but I'm not currently aware of any adverse effects.
 
@@ -61,7 +61,7 @@ This difference has the _potential_ to impact something if it makes use of the `
 * Xcode default - section title shows as "Frameworks, Libraries, and Embedded Content"
 * XcodeGen default - section title shows as "Embedded Content"
 
-![Screenshot of comparison of "Frameworks, Libraries, and Embedded Content" section of Xcode target general settings between Xcode-generated project and XcodeGen-generated project.](./docs/images/xcode-xcodegen-target-settings-comparison-embedded-content.png)
+![Screenshot of comparison of "Frameworks, Libraries, and Embedded Content" section of Xcode target general settings between Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-target-settings-comparison-embedded-content.png)
 
 This difference appears to be purely cosmetic and should have no real-world impact.
 
@@ -74,7 +74,7 @@ This difference appears to be purely cosmetic and should have no real-world impa
 * Xcode default - `iOS` (unset/inherited value)
 * XcodeGen default - `iOS` (explicit/overridden value)
 
-![Screenshot of comparison of "Architectures" section of Xcode target build settings between default Xcode-generated project and XcodeGen-generated project.](./docs/images/xcode-xcodegen-target-settings-comparison-base-sdk.png)
+![Screenshot of comparison of "Architectures" section of Xcode target build settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-target-settings-comparison-base-sdk.png)
 
 This difference should have no real-world impact.
 
@@ -85,7 +85,7 @@ This difference should have no real-world impact.
 * Xcode default - `MyApp` (explicit/overridden value)
 * XcodeGen default - `MyApp` (unset/inherited value)
 
-![Screenshot of comparison of "Packaging" section of Xcode target build settings between default Xcode-generated project and XcodeGen-generated project.](./docs/images/xcode-xcodegen-target-settings-comparison-product-name.png)
+![Screenshot of comparison of "Packaging" section of Xcode target build settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-target-settings-comparison-product-name.png)
 
 This difference should have no real-world impact.
 
@@ -96,7 +96,7 @@ This difference should have no real-world impact.
 * Xcode default - `Apple Development` (inherited from project)
 * XcodeGen default - `Apple Development` (explicit/overridden value)
 
-![Screenshot of comparison of "Signing" section of Xcode target build settings between default Xcode-generated project and XcodeGen-generated project.](./docs/images/xcode-xcodegen-target-settings-comparison-code-signing-identity.png)
+![Screenshot of comparison of "Signing" section of Xcode target build settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-target-settings-comparison-code-signing-identity.png)
 
 This difference should have no real-world impact.
 
@@ -107,7 +107,7 @@ By default, XcodeGen sets `CODE_SIGN_IDENTITY` to the older Xcode default of "iO
 * Xcode default - `Automatic` (explicit/overridden value)
 * XcodeGen default - `Automatic` (unset/inherited value)
 
-![Screenshot of comparison of "Signing" section of Xcode target build settings between default Xcode-generated project and XcodeGen-generated project.](./docs/images/xcode-xcodegen-target-settings-comparison-code-signing-style.png)
+![Screenshot of comparison of "Signing" section of Xcode target build settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-target-settings-comparison-code-signing-style.png)
 
 This difference should have no real-world impact.
 
@@ -118,7 +118,7 @@ This difference should have no real-world impact.
 * Xcode default - `Swift 5` (explicit/overridden value)
 * XcodeGen default - `Swift 5` (unset/inherited value)
 
-![Screenshot of comparison of "Swift Compiler - Language" section of Xcode target build settings between default Xcode-generated project and XcodeGen-generated project.](./docs/images/xcode-xcodegen-target-settings-comparison-swift-language-version.png)
+![Screenshot of comparison of "Swift Compiler - Language" section of Xcode target build settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-target-settings-comparison-swift-language-version.png)
 
 #### User-Defined
 
@@ -127,7 +127,7 @@ This difference should have no real-world impact.
 * Xcode default - _nonexistent_
 * XcodeGen default - `libc++` (unset/inherited value)
 
-![Screenshot of a comparison of "User-Defined" section of Xcode project settings between default Xcode-generated project and XcodeGen-generated project.](./docs/images/xcode-xcodegen-target-settings-comparison-user-defined-clang-cxx-library.png)
+![Screenshot of a comparison of "User-Defined" section of Xcode project settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-target-settings-comparison-user-defined-clang-cxx-library.png)
 
 This difference has the _potential_ to impact something if it makes use of the `CLANG_CXX_LIBRARY` variable during the build process, but I'm not currently aware of any adverse effects.
 
@@ -138,7 +138,7 @@ This difference has the _potential_ to impact something if it makes use of the `
 * Xcode default - "Link Binary With Libraries" step exists
 * XcodeGen default - "Link Binary With Libraries" step does not exist
 
-![Screenshot of comparison of "Link Binary With Libraries" build phase of Xcode target settings between default Xcode-generated project and XcodeGen-generated project.](./docs/images/xcode-xcodegen-target-settings-comparison-build-phases.png)
+![Screenshot of comparison of "Link Binary With Libraries" build phase of Xcode target settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-target-settings-comparison-build-phases.png)
 
 This difference should have no real-world impact, at least until external libraries need to be integrated into the project, at which time, the "Link Binary With Libraries" build step can be added manually.
 
@@ -155,7 +155,7 @@ This difference should have no real-world impact, at least until external librar
     * `ContentView.swift`
     * `MyAppApp.swift`
 
-![Screenshot of comparison of file order between default Xcode-generated project and XcodeGen-generated project.](./docs/images/xcode-xcodegen-project-structure-comparison-file-order.png)
+![Screenshot of comparison of file order between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-project-structure-comparison-file-order.png)
 
 This difference should have no real-world impact and is easily correctable by dragging the files around to the desired order.
 
@@ -164,6 +164,6 @@ This difference should have no real-world impact and is easily correctable by dr
 * Xcode default - _nonexistent_
 * XcodeGen default - `Products/MyApp.app`
 
-![Screenshot of comparison of products folder between default Xcode-generated project and XcodeGen-generated project.](./docs/images/xcode-xcodegen-project-structure-comparison-products-folder.png)
+![Screenshot of comparison of products folder between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-project-structure-comparison-products-folder.png)
 
 [As of Xcode 13](https://developer.apple.com/documentation/xcode-release-notes/xcode-13-release-notes#New-Features), Xcode no longer shows the "Products" folder in the project navigator, but it still exists in the file system. XcodeGen appears to be generating the "Products" folder explicitly. However, this difference should have no real-world impact.
