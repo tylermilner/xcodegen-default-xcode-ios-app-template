@@ -51,4 +51,5 @@ targets:
       - target: MyApp
     settings:
       base:
+        GENERATE_INFOPLIST_FILE: "YES"
         PRODUCT_BUNDLE_IDENTIFIER: "com.example.MyAppTests"
