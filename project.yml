@@ -51,5 +51,6 @@ targets:
       - target: MyApp
     settings:
       base:
+        ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES: "YES"
         GENERATE_INFOPLIST_FILE: "YES"
         PRODUCT_BUNDLE_IDENTIFIER: "com.example.MyAppTests"
