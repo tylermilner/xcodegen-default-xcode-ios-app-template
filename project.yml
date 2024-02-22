@@ -47,3 +47,5 @@ targets:
     platform: iOS
     sources:
       - MyAppTests
+    dependencies:
+      - target: MyApp
