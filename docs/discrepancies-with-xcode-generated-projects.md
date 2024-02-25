@@ -290,3 +290,124 @@ This difference should have no real-world impact, at least until external librar
 ![Screenshot of comparison of "Copy Bundle Resources" build phase of Xcode test target settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-tests-target-settings-comparison-build-phases-copy-bundle-resources.png)
 
 This difference should have no real-world impact, at least until external resources need to be integrated into the project, at which time, the "Copy Bundle Resources" build step can be added manually.
+
+## MyAppUITests Target Discrepancies
+
+### MyAppUITests - General
+
+#### Frameworks and Libraries
+
+* Xcode default - "Frameworks and Libraries" section exists
+* XcodeGen default - "Frameworks and Libraries" section does not exist
+
+![Screenshot of comparison of "Frameworks and Libraries" section of Xcode UI test target general settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-uitests-target-settings-comparison-frameworks-and-libraries.png)
+
+This difference should have no real-world impact, at least until external libraries need to be integrated into the project, at which time, the "Frameworks and Libraries" section can be added manually.
+
+### MyAppUITests - Build Settings
+
+#### Architectures
+
+**Base SDK (`SDKROOT`)**
+
+* Xcode default - `iOS` (unset/inherited value)
+* XcodeGen default - `iOS` (explicit/overridden value)
+
+![Screenshot of comparison of "Architectures" section of Xcode UI test target build settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-uitests-target-settings-comparison-base-sdk.png)
+
+This difference should have no real-world impact.
+
+#### Linking - General
+
+**Bundle Loader (`BUNDLE_LOADER`)**
+
+* Xcode default - _nonexistent_ (unset/inherited value)
+* XcodeGen default - _nonexistent_ (explicit/overridden value)
+
+![Screenshot of comparison of "Linking - General" section of Xcode UI test target build settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-uitests-target-settings-comparison-bundle-loader.png)
+
+This difference should have no real-world impact.
+
+**Runpath Search Paths (`LD_RUNPATH_SEARCH_PATHS`)**
+
+* Xcode default - `@loader_path/Frameworks` (unset/inherited value)
+* XcodeGen default - `@loader_path/Frameworks @executable_path/Frameworks @loader_path/Frameworks` (explicit/overridden value)
+
+![Screenshot of comparison of "Linking - General" section of Xcode UI test target build settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-uitests-target-settings-comparison-runpath-search-paths.png)
+
+This difference could have an impact based on project configuration, but it's unlikely to be a problem in most cases.
+
+#### Localization
+
+**Use Compiler to Extract Swift Strings (`SWIFT_EMIT_LOC_STRINGS`)**
+
+* Xcode default - `No` (explicit/overridden value)
+* XcodeGen default - `No` (unset/inherited value)
+
+![Screenshot of comparison of "Localization" section of Xcode UI test target build settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-uitests-target-settings-comparison-extract-swift-strings.png)
+
+This difference should have no real-world impact.
+
+#### Packaging
+
+**Product Name (`PRODUCT_NAME`)**
+
+* Xcode default - `MyAppUITests` (explicit/overridden value)
+* XcodeGen default - `MyAppUITests` (unset/inherited value)
+
+![Screenshot of comparison of "Packaging" section of Xcode UI test target build settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-uitests-target-settings-comparison-product-name.png)
+
+This difference should have no real-world impact.
+
+#### Signing
+
+**Code Signing Style (`CODE_SIGN_STYLE`)**
+
+* Xcode default - `Automatic` (explicit/overridden value)
+* XcodeGen default - `Automatic` (unset/inherited value)
+
+![Screenshot of comparison of "Signing" section of Xcode UI test target build settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-uitests-target-settings-comparison-code-signing-style.png)
+
+This difference should have no real-world impact.
+
+#### Swift Compiler - Language
+
+**Swift Language Version (`SWIFT_VERSION`)**
+
+* Xcode default - `Swift 5` (explicit/overridden value)
+* XcodeGen default - `Swift 5` (unset/inherited value)
+
+![Screenshot of comparison of "Swift Compiler - Language" section of Xcode UI test target build settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-uitests-target-settings-comparison-swift-language-version.png)
+
+This difference should have no real-world impact.
+
+#### User-Defined
+
+**`CLANG_CXX_LIBRARY`**
+
+* Xcode default - _nonexistent_
+* XcodeGen default - `libc++` (unset/inherited value)
+
+![Screenshot of a comparison of "User-Defined" section of Xcode project settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-uitests-target-settings-comparison-user-defined-clang-cxx-library.png)
+
+This difference has the _potential_ to impact something if it makes use of the `CLANG_CXX_LIBRARY` variable during the build process, but I'm not currently aware of any adverse effects.
+
+### MyAppUITests - Build Phases
+
+#### "Link Binary With Libraries" Build Step
+
+* Xcode default - "Link Binary With Libraries" step exists
+* XcodeGen default - "Link Binary With Libraries" step does not exist
+
+![Screenshot of comparison of "Link Binary With Libraries" build phase of Xcode UI test target settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-uitests-target-settings-comparison-build-phases-link-binary-with-libraries.png)
+
+This difference should have no real-world impact, at least until external libraries need to be integrated into the project, at which time, the "Link Binary With Libraries" build step can be added manually.
+
+#### "Copy Bundle Resources" Build Step
+
+* Xcode default - "Copy Bundle Resources" step exists
+* XcodeGen default - "Copy Bundle Resources" step does not exist
+
+![Screenshot of comparison of "Copy Bundle Resources" build phase of Xcode UI test target settings between default Xcode-generated project and XcodeGen-generated project.](./images/xcode-xcodegen-uitests-target-settings-comparison-build-phases-copy-bundle-resources.png)
+
+This difference should have no real-world impact, at least until external resources need to be integrated into the project, at which time, the "Copy Bundle Resources" build step can be added manually.
